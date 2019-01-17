@@ -1,5 +1,23 @@
 # Change Log
 
+## Unreleased
+
+### Added
+
+- Support for Rollup `1.0.0` [#42](https://github.com/jlmakes/karma-rollup-preprocessor/issues/42)
+
+### Changed
+
+- **Breaking:** Dropped support for Rollup `< 1.0.0`
+- **Breaking:** Dropped support for Node `< 8.0.0`
+- Watcher no longer relies on Karma’s `run_start` event. [#41](https://github.com/jlmakes/karma-rollup-preprocessor/issues/41)
+- Upgraded dependencies.
+
+### Fixed
+
+- Watcher only rebundles changed files and their dependents. [#28](https://github.com/jlmakes/karma-rollup-preprocessor/issues/28)
+- Each entry file has its bundle cache.
+
 ## [6.1.2] - 2019-01-02
 
 ### Changed
@@ -33,7 +51,7 @@
 
 ### Changed
 
-- **Breaking:** Dropped support for Node < 6.
+- **Breaking:** Dropped support for Node `< 6.0.0`
 
 ## [5.1.1] - 2018-01-08
 
@@ -45,7 +63,7 @@
 
 ### Added
 
-- File names containing null bytes are now ignored.
+- File names containing null bytes are now ignored. [@brianmhunt](https://github.com/brianmhunt) [#30](https://github.com/jlmakes/karma-rollup-preprocessor/issues/30)
 
 ## [5.0.3] - 2018-01-05
 
